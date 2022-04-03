@@ -46,6 +46,33 @@ p {
   color: crimson;
 }
 
+.cta {
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid crimson;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 50px;
+  transition: 0.5s ease;
+  transition-property: background-color, color;
+}
+.cta:hover {
+  color: white;
+  background-color: crimson;
+}
+
+.brand h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+}
+.brand h1 span {
+  color: crimson;
+}
+
 /* Hero Section */
 #hero {
   background-image: url("./img/polina-zi3782248.jpg");
@@ -116,106 +143,7 @@ p {
   animation-delay: 2.5s;
 }
 
-#hero .cta {
-  display: inline-block;
-  padding: 10px 30px;
-  color: white;
-  background-color: transparent;
-  border: 2px solid crimson;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  margin-top: 50px;
-  transition: 0.5s ease;
-  transition-property: background-color, color;
-}
-#hero .cta:hover {
-  color: white;
-  background-color: crimson;
-}
-
 /* End Hero Section */
-
-/* Start Service Section */
-
-#services .services {
-  flex-direction: column;
-  text-align: center;
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 100px 0;
-}
-
-#services .service-top p {
-  font-size: 1.4rem;
-  color: #29323c;
-  margin-top: 5px;
-  line-height: 2, 5rem;
-  font-weight: 300px;
-  letter-spacing: 0.05px;
-}
-
-#services .service-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 50px;
-}
-
-#services .service-item {
-  color: white;
-  flex-basis: 80%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  padding: 20px;
-  border-radius: 15px;
-  background-image: url(./img/pe3760529.jpg);
-  background-size: cover;
-  margin: 10px 5%;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-}
-
-#services .service-item::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  opacity: 0.8;
-  z-index: -1;
-}
-#services .service-bottom .icon {
-  height: 100px;
-  width: 100px;
-  margin-bottom: 20px;
-}
-
-#services .service-item h2 {
-  font-size: 2rem;
-  color: white;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-#services .service-item p {
-  color: white;
-  text-align: left;
-  font-size: 1.4rem;
-  line-height: 1.9rem;
-}
-
-#services .service-item p {
-  color: white;
-  text-align: left;
-}
-/* End Service Section */
 
 /* Start Project Section */
 #projects .projects {
@@ -326,9 +254,116 @@ p {
 #about .col-right h2 {
   font-size: 1.5rem;
   font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin-bottom: 10px;
+}
+#about .col-right p {
+  margin-bottom: 20px;
+}
+#about .col-right .cta {
+  color: black;
+  margin-bottom: 60px;
+  padding: 10px 20px;
+  font-size: 2rem;
+}
+#about .col-left .about-img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border: 10px solid white;
+}
+
+#about .col-left .about-img::after {
+  content: "";
+  position: absolute;
+  left: -33px;
+  top: 29px;
+  height: 98%;
+  width: 98%;
+  border: 3px solid crimson;
+  z-index: -1;
 }
 
 /* End About  Section */
+
+/* Start Contact Section */
+#contact .contact {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#contact .contact-items {
+  width: 350px;
+}
+
+#contact .contact-item {
+  width: 80%;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 25px 0px #29323c;
+  transition: 0.5s ease box-shadow;
+  flex-direction: column;
+}
+
+#contact .contact-item:hover {
+  box-shadow: 0px 0px 10px 0px #29323c;
+}
+
+#contact .icon {
+  width: 70px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+#contact .contact-info h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#contact .contact-info h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+/* End Contact Section */
+
+/* Start Footer Section */
+#footer {
+  background-image: linear-gradient(60deg, #29323c, #485563 100%);
+}
+#footer .footer {
+  min-height: 200px;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+#footer h2 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin-bottom: 10px;
+}
+
+#footer .social-icon {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#footer .social-media {
+  height: 50px;
+  width: 50px;
+  margin: 0 5px;
+}
+/* End Footer Section */
 
 /* Keyframes */
 @keyframes text-reveal-box {
