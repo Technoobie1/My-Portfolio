@@ -1,0 +1,36 @@
+html{
+    font-size: 20px;
+    font-family: "Monaco", sans-serif;
+        background-image: linear-gradient(to bottom right, rgb(117, 215, 248), rgb(2, 51, 57));
+        
+}
+.hero{
+    font-size: 3rem;
+    font-style: oblique;
+    font-weight: 800;
+    
+    padding: 50px;
+    margin: 25px;
+    text-align: center;
+}
+
+.main {
+    
+    padding: 20px 50px;
+    margin: 50px;
+    text-align: center;
+}
+
+.list {
+    
+    padding: 20px 50px;
+    margin: 50px;
+    text-align: justify;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 5rem;
+    text-align: center;
+    
+}
